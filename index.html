@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="icon" href="./assets/images/icon.png" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
+      }
+
+      .container {
+        background-color: white;
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .container img {
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 140px;
+        height: 60px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      input[type="text"],
+      input[type="date"],
+      input[type="number"],
+      input[type="email"],
+      input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #1877f2;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #1366d1;
+      }
+
+      a {
+        text-decoration: none;
+        display: block;
+        margin-top: 20px;
+        color: #1877f2;
+        font-size: 14px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./assets/images/facebook.png" alt="Facebook-Logo" />
+      <h1>Create New Account</h1>
+      <form action="login.html" method="get">
+        <input type="text" placeholder="First Name" required />
+        <input type="text" placeholder="Last Name" required />
+        <input type="date" placeholder="DOB" required />
+        <input type="number" placeholder="Age" required />
+        <input type="text" placeholder="Phone Number" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Create Password" required />
+        <input type="password" placeholder="Confirm Password" required />
+        <button type="submit">Register</button>
+      </form>
+      <a href="login.html">Login</a>
+    </div>
+  </body>
+</html>

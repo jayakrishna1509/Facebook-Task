@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Home</title>
+    <link rel="icon" href="./assets/images/icon.png" type="image/x-icon" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 100px;
+        background-color: #f0f2f5;
+      }
+      h1 {
+        color: #3b5998;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      .post {
+        border-bottom: 1px solid #ddd;
+        padding: 20px 0;
+      }
+      .post:last-child {
+        border-bottom: none;
+      }
+      .post-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .post-header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .post-header h2 {
+        margin: 0;
+        color: #333;
+      }
+      .post-content {
+        margin-bottom: 10px;
+      }
+      .post-actions {
+        display: flex;
+        justify-content: space-between;
+      }
+      .post-actions button {
+        background-color: #3b5998;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+      .post-actions button:hover {
+        background-color: #2d4373;
+      }
+      .notification {
+        margin-top: 20px;
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      .notification h2 {
+        margin-top: 0;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="login.html" method="get">
+      <div class="container">
+        <img src="./assets/images/facebook.png" alt="Facebook-Logo" />
+        <h1>Welcome to Facebook</h1>
+
+        <!-- Example Post -->
+        <div class="post">
+          <div class="post-header">
+            <img src="./assets/images/fish.jpg" alt="fish" />
+            <h2>Pillagolla Jayakrishna</h2>
+          </div>
+          <div class="post-content">
+            <p>
+              This is an example post content. It can be a status update, photo,
+              or any other type of content.
+            </p>
+          </div>
+          <div class="post-actions">
+            <button>Like</button>
+            <button>Comment</button>
+            <button>Share</button>
+          </div>
+        </div>
+
+        <!-- Notifications -->
+        <div class="notification">
+          <h2>Notifications</h2>
+          <p>You have 3 new notifications.</p>
+          <center><input type="submit" value="Back" /></center>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

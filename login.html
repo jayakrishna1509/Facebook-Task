@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link rel="icon" href="./assets/images/icon.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Helvetica, serif;
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .logo {
+        width: 240px;
+        height: 70px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .logo img {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .login {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.7);
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: calc(100% - 10px);
+        height: 40px;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        font-size: 15px;
+        padding-left: 10px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.7);
+        outline: none;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+      }
+
+      button {
+        width: 100%;
+        height: 45px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: large;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-bottom: 15px;
+      }
+
+      .login-btn {
+        background: #1877f2;
+      }
+
+      .login-btn:hover {
+        background: #1366d1;
+      }
+
+      .new-account {
+        background: #42b72a;
+        font-size: 16px;
+      }
+
+      .new-account:hover {
+        background: #3ba327;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #1877f2;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .style {
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        margin: 15px 0;
+      }
+
+      .style::before,
+      .style::after {
+        content: " ";
+        display: block;
+        height: 0.9px;
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .style::before {
+        left: 0;
+      }
+
+      .style::after {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo">
+        <img src="./assets/images/facebook.png" alt="logo" />
+      </div>
+      <div class="container">
+        <span class="login">Login to Facebook</span>
+        <form action="home.html" method="get">
+          <br />
+          <label for="email">Username:</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email address or Phone Number"
+            required
+          />
+          <label for="pass">Password:</label><br />
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Password"
+            required
+          />
+          <button class="login-btn" type="submit">Log in</button>
+          <a href="forgot_password.html">Forgot Password?</a>
+          <div class="style">or</div>
+          <button
+            class="new-account"
+            type="button"
+            onclick="window.location.href='index.html';"
+          >
+            Create New Account
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
